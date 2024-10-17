@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { ProjectSubmissionForm } from '../components/ProjectSubmissionForm';
+import { EligibilityResults } from '../components/EligibilityResults';
+import { useToast } from '../hooks/use-toast';
 
 const Index = () => {
+  const { toast } = useToast();
+
+  const handleSubmission = (projectData: any) => {
+    // This is where we would typically send the data to an API
+    // For now, we'll just show a toast notification
+    toast({
+      title: "Project Submitted",
+      description: "Your project has been submitted for eligibility check.",
+    });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gray-100">
+      <header className="bg-white shadow">
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold text-gray-900">AI PGF Project Eligibility Checker</h1>
+        </div>
+      </header>
+      <main>
+        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <div className="px-4 py-6 sm:px-0">
+            <div className="border-4 border-dashed border-gray-200 rounded-lg p-4">
+              <ProjectSubmissionForm onSubmit={handleSubmission} />
+              <EligibilityResults />
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
