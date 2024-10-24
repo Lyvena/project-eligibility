@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
+import { AuthDialog } from "./components/AuthDialog";
 
 const queryClient = new QueryClient();
 
