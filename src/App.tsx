@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
+import Settings from "./pages/Settings";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { AuthDialog } from "./components/AuthDialog";
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/" element={<Landing />} />
             <Route path="/project" element={<Index />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
           <Footer />
         </div>

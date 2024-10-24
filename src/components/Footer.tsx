@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -16,6 +15,7 @@ export const Footer = () => {
             >
               Lyvena.
             </a>
+            <span>All rights reserved.</span>
           </div>
         </div>
       </div>

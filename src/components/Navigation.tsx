@@ -7,6 +7,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Link } from 'react-router-dom';
+import { Settings } from 'lucide-react';
 
 export const Navigation = () => {
   return (
@@ -25,6 +26,12 @@ export const Navigation = () => {
         <NavigationMenuItem>
           <Link to="/contact" className={navigationMenuTriggerStyle()}>
             Contact
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link to="/settings" className={navigationMenuTriggerStyle()}>
+            <Settings className="w-4 h-4 mr-2" />
+            Settings
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
