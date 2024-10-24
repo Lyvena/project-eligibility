@@ -9,7 +9,7 @@ const Landing = () => {
         AI PGF Project Eligibility Checker
       </h1>
       <p className="text-xl text-center text-gray-600 mb-8 max-w-2xl">
-        Quickly evaluate your project\'s eligibility for Program Guild Funding using our advanced AI-powered system.
+        Quickly evaluate your project's eligibility for Program Guild Funding using our advanced AI-powered system.
       </p>
       <div className="space-x-4">
         <Button asChild size="lg">
